@@ -1,0 +1,12 @@
+- Is there a polynomial time algorithm for computing the optimal solution for the offline case?
+- Is there a polynomial time algorithm for computing the optimal solution for the online case?
+- Is there a good polynomial time approximation algorithm for the offline case?
+- Is there an online algorithm that is competitive with respect to what the offline algorithm would achieve
+given infinite time?
+- Is there an online algorithm that is competitive with respect to what the offline algorithm would achieve
+given polynomial time?
+
+I claim the following:
+Let P be any online algorithm that runs in exponential time and let OPT(prob) be the optimal solution
+to problem "prob". Let C(P,X) be the cost computed by P when given a problem X.
+Then there exists a problem X for which C(P,X)/OPT(X) >= 1+kn/OPT(x)
